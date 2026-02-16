@@ -1,10 +1,12 @@
-'use client'
+/** @format */
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import { Instagram, Facebook, Download, Play } from 'lucide-react'
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Instagram, Facebook, Download, Play } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -22,19 +24,26 @@ export default function LandingPage() {
             />
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-sm font-medium text-foreground hover:text-primary transition">
+            <a
+              href="#features"
+              className="text-sm font-medium text-foreground hover:text-primary transition"
+            >
               Features
             </a>
-            <a href="#download" className="text-sm font-medium text-foreground hover:text-primary transition">
+            <a
+              href="#download"
+              className="text-sm font-medium text-foreground hover:text-primary transition"
+            >
               Download
             </a>
-            <a href="#contact" className="text-sm font-medium text-foreground hover:text-primary transition">
+            <a
+              href="#contact"
+              className="text-sm font-medium text-foreground hover:text-primary transition"
+            >
               Contact
             </a>
           </div>
-          <Button  >
-            Get Started
-          </Button>
+          <Button>Get Started</Button>
         </nav>
       </header>
 
@@ -50,7 +59,9 @@ export default function LandingPage() {
             Your Complete Hair Industry Platform
           </h1>
           <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto text-balance">
-            We welcome all retailers, brands, brand reps, and wholesalers to sell their products on our one hub platform built for the hairdressing industry.
+            We welcome all retailers, brands, brand reps, and wholesalers to
+            sell their products on our one hub platform built for the
+            hairdressing industry.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -60,7 +71,6 @@ export default function LandingPage() {
               Download App
             </Button>
             <Button
-
               size="lg"
               className="border-white text-white hover:bg-white/20 rounded-full px-8 font-semibold border border-white"
             >
@@ -79,24 +89,34 @@ export default function LandingPage() {
                 Powerful Retailer Dashboard
               </h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Manage your entire business from one centralized dashboard. Track orders, monitor sales, analyze performance metrics, and manage inventory all in real-time.
+                Manage your entire business from one centralized dashboard.
+                Track orders, monitor sales, analyze performance metrics, and
+                manage inventory all in real-time.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex gap-3 items-start">
                   <span className="text-primary text-xl mt-1">✓</span>
-                  <span className="text-foreground">Real-time sales analytics and reporting</span>
+                  <span className="text-foreground">
+                    Real-time sales analytics and reporting
+                  </span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="text-primary text-xl mt-1">✓</span>
-                  <span className="text-foreground">Complete order management system</span>
+                  <span className="text-foreground">
+                    Complete order management system
+                  </span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="text-primary text-xl mt-1">✓</span>
-                  <span className="text-foreground">Inventory tracking and optimization</span>
+                  <span className="text-foreground">
+                    Inventory tracking and optimization
+                  </span>
                 </li>
                 <li className="flex gap-3 items-start">
                   <span className="text-primary text-xl mt-1">✓</span>
-                  <span className="text-foreground">Payment management and reconciliation</span>
+                  <span className="text-foreground">
+                    Payment management and reconciliation
+                  </span>
                 </li>
               </ul>
             </div>
@@ -123,7 +143,9 @@ export default function LandingPage() {
               Manage On The Go
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Access your entire business from your phone. Our mobile app provides all the power of the dashboard in a beautiful, touch-optimized interface.
+              Access your entire business from your phone. Our mobile app
+              provides all the power of the dashboard in a beautiful,
+              touch-optimized interface.
             </p>
           </div>
 
@@ -132,22 +154,37 @@ export default function LandingPage() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📱</span>
               </div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Shop Interface</h3>
-              <p className="text-muted-foreground">Browse and manage products with an intuitive shop interface designed for quick navigation.</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Shop Interface
+              </h3>
+              <p className="text-muted-foreground">
+                Browse and manage products with an intuitive shop interface
+                designed for quick navigation.
+              </p>
             </Card>
             <Card className="p-6 border-2 border-border hover:border-primary transition">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">📊</span>
               </div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Live Analytics</h3>
-              <p className="text-muted-foreground">Track your performance metrics and key insights in real-time directly from your mobile device.</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Live Analytics
+              </h3>
+              <p className="text-muted-foreground">
+                Track your performance metrics and key insights in real-time
+                directly from your mobile device.
+              </p>
             </Card>
             <Card className="p-6 border-2 border-border hover:border-primary transition">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-2xl">⚡</span>
               </div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Fast Sync</h3>
-              <p className="text-muted-foreground">Instant synchronization between web and mobile platforms keeps your data always up-to-date.</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Fast Sync
+              </h3>
+              <p className="text-muted-foreground">
+                Instant synchronization between web and mobile platforms keeps
+                your data always up-to-date.
+              </p>
             </Card>
           </div>
         </div>
@@ -161,30 +198,47 @@ export default function LandingPage() {
               Why Choose MyColourCost?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Built specifically for the hair industry with features that matter to retailers and wholesalers.
+              Built specifically for the hair industry with features that matter
+              to retailers and wholesalers.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">💰</div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Cost Tracking</h3>
-              <p className="text-sm text-muted-foreground">Track product costs and calculate profit margins instantly</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Cost Tracking
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Track product costs and calculate profit margins instantly
+              </p>
             </Card>
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">🏪</div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Multi-Channel</h3>
-              <p className="text-sm text-muted-foreground">Manage multiple stores and locations from one platform</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Multi-Channel
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Manage multiple stores and locations from one platform
+              </p>
             </Card>
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">📈</div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Growth Tools</h3>
-              <p className="text-sm text-muted-foreground">Insights and analytics to help grow your business</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Growth Tools
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Insights and analytics to help grow your business
+              </p>
             </Card>
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">🔒</div>
-              <h3 className="font-bold text-lg text-foreground mb-2">Secure & Reliable</h3>
-              <p className="text-sm text-muted-foreground">Enterprise-grade security for your business data</p>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Secure & Reliable
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Enterprise-grade security for your business data
+              </p>
             </Card>
           </div>
         </div>
@@ -200,7 +254,8 @@ export default function LandingPage() {
             Download MyColourCost Today
           </h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Join thousands of retailers and wholesalers already using MyColourCost to streamline their business.
+            Join thousands of retailers and wholesalers already using
+            MyColourCost to streamline their business.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -211,7 +266,6 @@ export default function LandingPage() {
               <Download className="w-5 h-5" />
               Download App
             </Button>
-
           </div>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -243,7 +297,9 @@ export default function LandingPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">₹100M+</div>
-              <p className="text-lg text-muted-foreground">Transaction Volume</p>
+              <p className="text-lg text-muted-foreground">
+                Transaction Volume
+              </p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary mb-2">24/7</div>
@@ -254,13 +310,14 @@ export default function LandingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary text-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#ff6c95] to-[#e993fd] text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-balance">
             Ready to Transform Your Business?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto text-balance">
-            Join the modern platform designed for the hair industry. Get started today and take control of your business.
+            Join the modern platform designed for the hair industry. Get started
+            today and take control of your business.
           </p>
           <Button
             size="lg"
@@ -279,24 +336,58 @@ export default function LandingPage() {
               <div className="mb-4">
                 <div className="text-2xl font-bold">MyColourCost</div>
               </div>
-              <p className="text-white/70">Your complete platform for the hair industry</p>
+              <p className="text-white/70">
+                Your complete platform for the hair industry
+              </p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
               <ul className="space-y-2 text-white/70">
-                <li><a href="#" className="hover:text-white transition">Features</a></li>
-                <li><a href="#" className="hover:text-white transition">Pricing</a></li>
-                <li><a href="#" className="hover:text-white transition">Security</a></li>
-                <li><a href="#" className="hover:text-white transition">Roadmap</a></li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Pricing
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Security
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Roadmap
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-white/70">
-                <li><a href="#" className="hover:text-white transition">About</a></li>
-                <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition">Careers</a></li>
-                <li><a href="#" className="hover:text-white transition">Contact</a></li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-white transition">
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
@@ -327,13 +418,19 @@ export default function LandingPage() {
           <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-center text-white/60 text-sm">
             <p>&copy; 2024 MyColourCost. All rights reserved.</p>
             <div className="flex gap-6 mt-4 sm:mt-0">
-              <a href="#" className="hover:text-white transition">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition">Terms of Service</a>
-              <a href="#" className="hover:text-white transition">Cookie Policy</a>
+              <a href="#" className="hover:text-white transition">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-white transition">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-white transition">
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
