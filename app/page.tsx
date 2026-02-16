@@ -296,7 +296,7 @@ export default function LandingPage() {
               <p className="text-lg text-muted-foreground">Active Retailers</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">$100M+</div>
+              <div className="text-4xl font-bold text-primary mb-2">£100M+</div>
               <p className="text-lg text-muted-foreground">
                 Transaction Volume
               </p>
