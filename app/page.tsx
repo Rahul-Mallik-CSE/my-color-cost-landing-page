@@ -334,11 +334,15 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="mb-4">
-                <div className="text-2xl font-bold">MyColourCost</div>
+                <div className="text-2xl font-bold">My Colour Cost Ltd</div>
               </div>
               <p className="text-white/70">
-                Your complete platform for the hair industry
+                Your complete platform for the hair industry.
               </p>
+
+              <p className="text-white/70 ">Company number: 16940535</p>
+              <p className="text-white/70 ">Email: Ops@mycolourcost.com</p>
+              <p className="text-white/70 ">Whatsapp: 07496230718</p>
             </div>
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
