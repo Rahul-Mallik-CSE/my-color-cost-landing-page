@@ -16,7 +16,7 @@ export default function LandingPage() {
         <nav className="max-w-625 mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.png"
+              src="/logo.svg"
               alt="MyColourCost"
               width={140}
               height={40}
@@ -271,7 +271,7 @@ export default function LandingPage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <div className="flex items-center gap-2">
               <Image
-                src="/logo.png"
+                src="/logo.svg"
                 alt="MyColourCost Logo"
                 width={120}
                 height={40}
