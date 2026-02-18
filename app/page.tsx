@@ -17,7 +17,7 @@ export default function LandingPage() {
         <nav className="max-w-625 mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="MyColourCost"
               width={140}
               height={40}
@@ -204,17 +204,17 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
+            {/* <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">🏪</div>
               <h3 className="font-bold text-lg text-foreground mb-2">
-                Multi
+                Take Multi Out
               </h3>
               <p className="text-sm text-muted-foreground">
-                Manage multiple stores and locations from one platform
+                Retailers can Join, integrate and list their products for free.
               </p>
-            </Card>
+            </Card> */}
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">💰</div>
               <h3 className="font-bold text-lg text-foreground mb-2">
