@@ -1,6 +1,16 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Agrandir";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/agrandir-bold.woff") format("woff");
+  font-display: swap;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;

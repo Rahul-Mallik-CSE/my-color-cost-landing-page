@@ -56,14 +56,17 @@ export default function LandingPage() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 text-balance">
+          {/* Here for the h1 i need to use the Agrandir font */}
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-agrandir font-bold text-white mb-2 text-balance">
             THE HAIR INDUSTRYS ONLY
           </h1>
-          <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-agrandir font-bold text-white mb-6 text-balance">
             comprehensive solution for hairstylists, salon owners and retailers.
           </h1>
           <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto text-balance">
-            We welcome all retailers, brands, brand reps, and wholesalers to sell their products on our one hub platform built for the hairdressing industry.
+            We welcome all retailers, brands, brand reps, and wholesalers to
+            sell their products on our one hub platform built for the
+            hairdressing industry.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -200,12 +203,12 @@ export default function LandingPage() {
               Why Choose My Colour Cost?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive solution for self-employed hairdressers, salon owners and Retailers.
+              A comprehensive solution for self-employed hairdressers, salon
+              owners and Retailers.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-
             {/* <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">🏪</div>
               <h3 className="font-bold text-lg text-foreground mb-2">
@@ -275,20 +278,13 @@ export default function LandingPage() {
               <Button className="flex justify-center items-center text-black gap-2 bg-transparent hover:bg-transparent border border-black">
                 <FaApple /> Apple Store
               </Button>
-
             </div>
             <span className="text-muted-foreground">or</span>
             <div className="flex items-center gap-2">
               <Button className="flex justify-center items-center text-black gap-2 bg-transparent hover:bg-transparent border border-black">
-                <Image
-                  src="/playstore.png"
-                  alt="G"
-                  width={15}
-                  height={15}
-
-                />Play Store
+                <Image src="/playstore.png" alt="G" width={15} height={15} />
+                Play Store
               </Button>
-
             </div>
           </div>
         </div>
@@ -323,7 +319,8 @@ export default function LandingPage() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto text-balance">
-            Join the revolutionary platform that is My Colour Cost. Get started and take control of your business.
+            Join the revolutionary platform that is My Colour Cost. Get started
+            and take control of your business.
           </p>
           <Button
             size="lg"
