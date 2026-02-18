@@ -128,7 +128,7 @@ export default function LandingPage() {
             <div className="relative">
               <div className="rounded-xl overflow-hidden shadow-2xl border border-border">
                 <Image
-                  src="/retailer-dashboard.png"
+                  src="/hero.png"
                   alt="Retailer Dashboard"
                   width={500}
                   height={600}
