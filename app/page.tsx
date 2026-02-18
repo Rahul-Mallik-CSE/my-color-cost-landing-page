@@ -7,6 +7,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Instagram, Facebook, Download, Play } from "lucide-react";
+import { FaApple } from "react-icons/fa";
 
 export default function LandingPage() {
   return (
@@ -54,14 +55,15 @@ export default function LandingPage() {
           <div className="absolute -bottom-8 left-10 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
-            Your Complete Hair Industry Platform
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-2 text-balance">
+            THE HAIR INDUSTRYS ONLY
+          </h1>
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-white mb-6 text-balance">
+            comprehensive solution for hairstylists, salon owners and retailers.
           </h1>
           <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl mx-auto text-balance">
-            We welcome all retailers, brands, brand reps, and wholesalers to
-            sell their products on our one hub platform built for the
-            hairdressing industry.
+            We welcome all retailers, brands, brand reps, and wholesalers to sell their products on our one hub platform built for the hairdressing industry.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button
@@ -195,15 +197,24 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4 text-balance">
-              Why Choose MyColourCost?
+              Why Choose My Colour Cost?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Built specifically for the hair industry with features that matter
-              to retailers and wholesalers.
+              A comprehensive solution for self-employed hairdressers, salon owners and Retailers.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
+              <div className="text-4xl mb-4">🏪</div>
+              <h3 className="font-bold text-lg text-foreground mb-2">
+                Multi
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                Manage multiple stores and locations from one platform
+              </p>
+            </Card>
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
               <div className="text-4xl mb-4">💰</div>
               <h3 className="font-bold text-lg text-foreground mb-2">
@@ -211,15 +222,6 @@ export default function LandingPage() {
               </h3>
               <p className="text-sm text-muted-foreground">
                 Track product costs and calculate profit margins instantly
-              </p>
-            </Card>
-            <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🏪</div>
-              <h3 className="font-bold text-lg text-foreground mb-2">
-                Multi-Channel
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                Manage multiple stores and locations from one platform
               </p>
             </Card>
             <Card className="p-6 text-center border-2 border-border hover:shadow-lg transition">
@@ -251,7 +253,7 @@ export default function LandingPage() {
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6 text-balance">
-            Download MyColourCost Today
+            Download My Colour Cost Today
           </h2>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             Join thousands of retailers and wholesalers already using
@@ -270,25 +272,30 @@ export default function LandingPage() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <div className="flex items-center gap-2">
-              <Image
-                src="/logo.svg"
-                alt="MyColourCost Logo"
-                width={120}
-                height={40}
-                className="h-10 w-auto"
-              />
+              <Button className="flex justify-center items-center text-black gap-2 bg-transparent hover:bg-transparent border border-black">
+                <FaApple /> Apple Store
+              </Button>
+
             </div>
             <span className="text-muted-foreground">or</span>
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🔵</span>
-              <span className="font-semibold text-foreground">Google Play</span>
+              <Button className="flex justify-center items-center text-black gap-2 bg-transparent hover:bg-transparent border border-black">
+                <Image
+                  src="/playstore.png"
+                  alt="G"
+                  width={15}
+                  height={15}
+
+                />Play Store
+              </Button>
+
             </div>
           </div>
         </div>
       </section>
 
       {/* Testimonials/Stats Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -307,7 +314,7 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#ff6c95] to-[#e993fd] text-white">
@@ -316,8 +323,7 @@ export default function LandingPage() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-lg text-white/90 mb-8 max-w-xl mx-auto text-balance">
-            Join the modern platform designed for the hair industry. Get started
-            today and take control of your business.
+            Join the revolutionary platform that is My Colour Cost. Get started and take control of your business.
           </p>
           <Button
             size="lg"
